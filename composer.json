@@ -1,0 +1,23 @@
+{
+  "name": "bridgewatercollege/canvas-api-bundle",
+  "type": "symfony-bundle",
+  "description": "Contains a service/entity structure for the connection and manipulation of data going to/from the canvas api",
+  "keywords": ["restapi", "canvas", "bridgewater college"],
+  "homepage": "http://www.bridgewater.edu",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tyler Weisman",
+      "email": "tweisman@bridgewater.edu"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "BridgewaterCollege\\Bundle\\CanvasApiBundle\\": ""
+    }
+  },
+  "require": {
+    "php": "~7.0",
+    "mashape/unirest-php": "^3.0"
+  }
+}
