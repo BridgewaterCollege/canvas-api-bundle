@@ -27,7 +27,7 @@ class CanvasApiServiceHandler extends ProcessHandler {
             throw new HttpException(500, 'Error no valid canvas api configuration found in system. Please generate a config before using the handler.');
     }
 
-    private function setCanvasConfiguration($envName, $apiToken, $url) {
+    public function setCanvasConfiguration($envName, $apiToken, $url) {
         $this->canvasConfiguration = $this->em->getRepository(CanvasConfiguration::class)->find($envName);
         if ($this->canvasConfiguration == null)
             $this->canvasConfiguration = new CanvasConfiguration();
